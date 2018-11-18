@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#dsf# sr/bin/env bash
+
+
+echo "WELCOM TO ARTEMIS ENGINE DESIGN PROGRAM"
+echo "Starting Calculations..."
+#TODO: Insert password protection
+sleep 1s
+echo "---isentropic calculations---"
+echo "nozzle contour graph"
+python ./bin/one.py
+echo "calculating abstract engine theoretics"
+python ./bin/two.py
+
+
+
+
+echo "terminate process"
+
