@@ -13,8 +13,7 @@ from __future__ import division, absolute_import
 
 import numpy as np
 
-#from skaero.gasdynamics
-import isentropic, shocks
+from skaero.gasdynamics import isentropic, shocks
 
 
 class Nozzle(object):

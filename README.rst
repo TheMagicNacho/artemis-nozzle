@@ -1,31 +1,19 @@
-scikit-aero
+Artemis - Nozzle Calculator
 ===========
 
-:Name: scikit-aero
-:Description: Aeronautical engineering calculations in Python
-:Website: https://github.com/AeroPython/scikit-aero
+:Name: Artemis NOzzle Calculator
+:Description: Rocket design calculations
+:Website: https://www.artemislaunchsystems.com
 :Author: AeroPython Team <aeropython@groups.io>
-:Version: 0.2.dev0
+:Version: 0.3.dev0
+Calulator package bassed on scikit-aero by by Juan Luis Cano in 2012.
+Visit his GitHub: https://github.com/AeroPython/scikit-aero
 
-.. image:: http://unmaintained.tech/badge.svg
-   :target: http://unmaintained.tech/
-   :alt: No Maintenance Intended
-
-scikit-aero is a Python package for various aeronautical engineering
-calculations. It is based on several existing Python packages on the field,
-but intends to provide pythonic syntax, use of SI units and full NumPy arrays
-support among other things. scikit-aero is licensed under the BSD license.
-
-It was started by Juan Luis Cano in 2012 and has code from several
-contributors (see AUTHORS). The source code and issue tracker are both hosted
-on GitHub
-
-**Notice**: This package is under heavy development and the API might change
-at any time until a 1.0 version is reached. It is stable but not feaure
-complete yet, and it might contain bugs.
+**Notice**: Outputs are propritary towards the Artemis project. Do not use raw data without adjustment for your project.
 
 Features
 --------
+
 
 * Pythonic interface.
 * Use of SI units.
@@ -34,6 +22,7 @@ Features
 * Fully tested and documented.
 * Standard atmosphere properties up to 86 kilometers.
 * Gas dynamics calculations.
+* Metric units
 
 Future
 ------
@@ -88,27 +77,6 @@ version of IPython and its dependencies.
 .. _`py.test`: http://pytest.org
 .. _`IPython`: http://ipython.org/
 
-Install
-=======
-
-This package uses distutils. To install, execute as usual::
-
-  $ python setup.py install
-
-It is recommended that you **never ever use sudo** with distutils, pip,
-setuptools and friends in Linux because you might seriously break your
-system [1_][2_][3_][4_]. I recommend using `virtualenv`_, `per user directories`_
-or `local installations`_.
-
-.. _1: http://wiki.python.org/moin/CheeseShopTutorial#Distutils_Installation
-.. _2: http://stackoverflow.com/questions/4314376/how-can-i-install-a-python-egg-file/4314446#comment4690673_4314446
-.. _3: http://workaround.org/easy-install-debian
-.. _4: http://matplotlib.1069221.n5.nabble.com/Why-is-pip-not-mentioned-in-the-Installation-Documentation-tp39779p39812.html
-
-.. _`virtualenv`: http://pypi.python.org/pypi/virtualenv
-.. _`per user directories`: http://stackoverflow.com/a/7143496/554319
-.. _`local installations`: http://stackoverflow.com/a/4325047/554319
-
 Testing
 =======
 
@@ -134,19 +102,6 @@ http://nbviewer.ipython.org/url/raw.github.com/Pybonacci/scikit-aero/master/exam
 
 .. _`nbviewer`: http://nbviewer.ipython.org/
 
-Bug reporting
-=============
-
-I am pretty sure I never introduce bugs in my code, but if you want to prove
-me wrong please refer to the `issue tracker`_ on GitHub.
-
-.. _`issue tracker`: https://github.com/Juanlu001/scikit-aero/issues
-
-Citing
-======
-
-If you use scikit-aero on your project, please
-`drop me a line <mailto:juanlu001@gmail.com>`_.
 
 License
 =======
@@ -154,7 +109,7 @@ License
 scikit-aero is released under a 2-clause BSD license, hence allowing commercial use
 of the library. Please refer to the COPYING file.
 
-See also
+Reff.
 ========
 
 * `AeroCalc`_, package written by Kevin Horton which inspired scikit-aero.

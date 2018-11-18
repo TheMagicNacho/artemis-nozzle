@@ -1,18 +1,17 @@
-{% extends "basic/layout.html" %}
 
-{%- block doctype -%}
 <!DOCTYPE html>
-{%- endblock -%}
 
-{%- block extrahead -%}
+
+
 <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro|Open+Sans:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
 <link href="{{ pathto("_static/solarized-dark.css", 1) }}" rel="stylesheet">
-{%- endblock -%}
 
-{# put the sidebar before the body #}
+
+
 {% block sidebar1 %}{{ sidebar() }}{% endblock %}
 {% block sidebar2 %}{% endblock %}
 
+<!--
 {%- block footer %}
     <div class="footer">
     {%- if show_copyright %}
@@ -30,3 +29,5 @@
     {%- endif %}
     </div>
 {%- endblock %}
+
+-->
