@@ -29,6 +29,7 @@ import scipy as sp
 
 from skaero.util.decorators import implicit
 
+# CALCULATED FUNCTIONS
 
 def mach_angle(M):
     """Returns Mach angle given supersonic Mach number.
@@ -55,87 +56,6 @@ def mach_angle(M):
     except FloatingPointError:
         raise ValueError("Mach number must be supersonic")
     return mu
-
-
-def mach_from_area_ratio(A_Astar, fl=None):
-    """Computes the Mach number given an area ratio asuming isentropic flow.
-
-    Uses the relation between Mach number and area ratio for isentropic flow,
-    and returns both the subsonic and the supersonic solution.
-
-    Parameters
-    ----------
-    A_Astar : float
-        Cross sectional area.
-    fl : IsentropicFlow, optional
-        Isentropic flow object, default flow with gamma = 7 / 5.
-
-    Returns
-    -------
-    out : tuple of floats
-        Subsonic and supersonic Mach number solution of the equation.
-
-    Raises
-    ------
-    ValueError
-        If the area ratio is less than 1.0 (the critical area is always the
-        minimum).
-
-    """
-    if not fl:
-        fl = IsentropicFlow(gamma=1.4)
-    eq = implicit(fl.A_Astar)
-    if A_Astar < 1.0:
-        raise ValueError("Area ratio must be greater than 1")
-    elif A_Astar == 1.0:
-        M_sub = M_sup = 1.0
-    else:
-        M_sub = sp.optimize.bisect(eq, 0.0, 1.0, args=(A_Astar,))
-        M_sup = sp.optimize.newton(eq, 2.0, args=(A_Astar,))
-
-    return M_sub, M_sup
-
-
-def mach_from_nu(nu, in_radians=True, gamma=1.4):
-    """Computes the Mach number given a Prandtl-Meyer angle, :math:`\nu`.
-
-    Uses the relation between Mach number and Prandtl-Meyer angle for
-    isentropic flow, to iteratively compute and return the Mach number.
-
-    Parameters
-    ----------
-    nu : float
-        Prandtl-Meyer angle, by default in radians.
-    in_radians : bool, optional
-        When set as False, converts nu from degrees to radians.
-    gamma : float, optional
-        Specific heat ratio.
-
-    Returns
-    -------
-    M : float
-        Mach number corresponding to :math:`\nu`.
-
-    Raises
-    ------
-    ValueError
-        If :math:`\nu` is 0 or negative or above the theoretical maxima based on
-        :math:`\gamma`.
-
-    """
-    if not in_radians:
-        nu = np.radians(nu)
-
-    nu_max = np.pi / 2. * (np.sqrt((gamma + 1.) / (gamma - 1.)) - 1)
-    if(nu <= 0.0 or nu >= nu_max):
-        raise ValueError("Prandtl-Meyer angle must be between (0, %f) radians."
-                         % nu_max)
-
-    eq = implicit(PrandtlMeyerExpansion.nu)
-    M = sp.optimize.newton(eq, 2.0, args=(nu,))
-
-    return M
-
 
 class IsentropicFlow(object):
     """Class representing an isentropic flow.
@@ -206,7 +126,7 @@ class IsentropicFlow(object):
         T_T0 = 1 / (1 + (self.gamma - 1) * M * M / 2)
         return T_T0
 
-    def A_Astar(self, M):
+    def astar(self, M):
         """Area ratio from Mach number.
 
         Duct area divided by critial area given Mach number.
@@ -218,7 +138,7 @@ class IsentropicFlow(object):
 
         Returns
         -------
-        A_Astar : array_like
+        astar : array_like
             Area ratio.
 
         """
@@ -226,11 +146,89 @@ class IsentropicFlow(object):
         # If there is any zero entry, NumPy array division gives infinity,
         # which is correct.
         with np.errstate(divide='ignore'):
-            A_Astar = (
-                (2 / self.T_T0(M) / (self.gamma + 1)) **
-                ((self.gamma + 1) / (2 * (self.gamma - 1))) / M
-            )
-        return A_Astar
+            astar = ( (2 / self.T_T0(M) / (self.gamma + 1)) ** ((self.gamma + 1) / (2 * (self.gamma - 1))) / M)
+        return astar
+
+
+def mach_from_area_ratio(fl=None, A_r):
+    """Computes the Mach number given an area ratio asuming isentropic flow.
+
+    Uses the relation between Mach number and area ratio for isentropic flow,
+    and returns both the subsonic and the supersonic solution.
+
+    Parameters
+    ----------
+    astar : float
+        Cross sectional area.
+    fl : IsentropicFlow, optional
+        Isentropic flow object, default flow with gamma = 7 / 5.
+
+    Returns
+    -------
+    out : tuple of floats
+        Subsonic and supersonic Mach number solution of the equation.
+
+    Raises
+    ------
+    ValueError
+        If the area ratio is less than 1.0 (the critical area is always the
+        minimum).
+
+    """
+    if not fl:
+        fl = IsentropicFlow(gamma=1.4)
+    eq = implicit(fl.A_c)
+    if A_c < 1.0:
+        raise ValueError("Area ratio must be greater than 1")
+    elif A_c == 1.0:
+        M_sub = M_sup = 1.0
+    else:
+        M_sub = sp.optimize.bisect(eq, 0.0, 1.0, args=(A_c,))
+        M_sup = sp.optimize.newton(eq, 2.0, args=(A_c,))
+
+    return M_sub, M_sup
+
+
+def mach_from_nu(nu, in_radians=True, gamma=1.4):
+    """Computes the Mach number given a Prandtl-Meyer angle, :math:`\nu`.
+
+    Uses the relation between Mach number and Prandtl-Meyer angle for
+    isentropic flow, to iteratively compute and return the Mach number.
+
+    Parameters
+    ----------
+    nu : float
+        Prandtl-Meyer angle, by default in radians.
+    in_radians : bool, optional
+        When set as False, converts nu from degrees to radians.
+    gamma : float, optional
+        Specific heat ratio.
+
+    Returns
+    -------
+    M : float
+        Mach number corresponding to :math:`\nu`.
+
+    Raises
+    ------
+    ValueError
+        If :math:`\nu` is 0 or negative or above the theoretical maxima based on
+        :math:`\gamma`.
+
+    """
+    if not in_radians:
+        nu = np.radians(nu)
+
+    nu_max = np.pi / 2. * (np.sqrt((gamma + 1.) / (gamma - 1.)) - 1)
+    if(nu <= 0.0 or nu >= nu_max):
+        raise ValueError("Prandtl-Meyer angle must be between (0, %f) radians."
+                         % nu_max)
+
+    eq = implicit(PrandtlMeyerExpansion.nu)
+    M = sp.optimize.newton(eq, 2.0, args=(nu,))
+
+    return M
+
 
 
 class PrandtlMeyerExpansion(object):

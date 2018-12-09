@@ -29,14 +29,6 @@ import scipy as sp
 
 from skaero.util.decorators import implicit
 
-# USER DEFINED VARRABLES
-g = 1.4
-R = 287.04  # J?/ (kg ? K)
-p_amb = 1 * sp.constants.atm  # Pa
-p_0 = 2.0 * sp.constants.atm  # Pa
-T_0 = 9000 #k
-
-# CALCULATED FUNCTIONS
 
 def mach_angle(M):
     """Returns Mach angle given supersonic Mach number.

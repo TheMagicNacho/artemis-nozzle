@@ -1,0 +1,23 @@
+SECTION ONE:  NOZZLE THEORETICS
+FROM:  V1.3
+----------
+-USER DEFINED CONSTANTS-
+Specific Heat: 4686.79
+Combustion Chamber Tem (k): 673.504
+Combustion Chamber Pressure (bar) 25
+Combustion Chamber Volume (l): 2
+Ambiant Pressure (bar): 10
+----------
+ENGINE THEORETICS
+Average Operating Temps (k): 673.6477026194901
+Exit Mach: 12.811009103811658
+Specific Impulse (sec): 385.7286263098755
+Mass Flow Rate (kg/s): 132.80197814053994
+----------
+ENGINE DESIGNS
+Area Throat (cm^2): 479.946349
+Area Exit (cm^2): 1339.571216
+Diameter Throat (cm): 24.720167
+Diameter Exit (cm): 41.298850
+Cone Length (cm): 0.000193
+Mach Angle: 0.07813734979143427

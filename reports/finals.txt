@@ -1,2 +1,0 @@
-TESTING -- two
--defined constant parematers-
