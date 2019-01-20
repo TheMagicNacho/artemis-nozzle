@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b96985f2-81a2-466a-91d9-c266c621d00e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/COPYING" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/one.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/one.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/two.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/skaero/gasdynamics/isentropic.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/skaero/gasdynamics/isentropic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/examples/Oblique shocks chart.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Oblique shocks chart.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/finals.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/run" beforeDir="false" afterPath="$PROJECT_DIR$/run" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/skaero/gasdynamics/isentropic.py" beforeDir="false" afterPath="$PROJECT_DIR$/skaero/gasdynamics/isentropic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/bin/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/Convergent-divergent nozzle.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/examples/Convergent-divergent nozzle.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,16 +17,16 @@
     <session id="1378836526">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.28" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,7 +55,7 @@
         <counts>
           <entry key="Python Console" value="18" />
           <entry key="dummy" value="16" />
-          <entry key="py" value="3665" />
+          <entry key="py" value="3853" />
           <entry key="rst" value="5" />
           <entry key="run" value="520" />
           <entry key="sh" value="72" />
@@ -72,7 +66,7 @@
         <counts>
           <entry key="Bash" value="592" />
           <entry key="PLAIN_TEXT" value="30" />
-          <entry key="Python" value="3683" />
+          <entry key="Python" value="3871" />
           <entry key="ReST" value="5" />
         </counts>
       </usages-collector>
@@ -92,11 +86,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bin/one.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
+            <state relative-caret-position="900">
+              <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
               <folding>
                 <element signature="e#24#42#0" expanded="true" />
               </folding>
@@ -119,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skaero/gasdynamics/nozzles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
+            <state relative-caret-position="450">
               <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
               <folding>
                 <element signature="e#95#143#0" expanded="true" />
@@ -128,19 +122,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bin/one-v1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding>
-                <element signature="e#28#46#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/Convergent-divergent nozzle.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
@@ -166,7 +148,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/skaero/gasdynamics/isentropic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="720">
               <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="33" />
               <folding>
                 <element signature="e#382#430#0" expanded="true" />
@@ -213,7 +195,6 @@
         <option value="$PROJECT_DIR$/bin/run.sh" />
         <option value="$PROJECT_DIR$/bin/1.py" />
         <option value="$PROJECT_DIR$/one.py" />
-        <option value="$PROJECT_DIR$/examples/Convergent-divergent nozzle.ipynb" />
         <option value="$PROJECT_DIR$/userdefined.py" />
         <option value="$PROJECT_DIR$/u-def.py" />
         <option value="$PROJECT_DIR$/skaero/gasdynamics/nozzles.py" />
@@ -226,11 +207,13 @@
         <option value="$PROJECT_DIR$/bin/one-v1.py" />
         <option value="$PROJECT_DIR$/run" />
         <option value="$PROJECT_DIR$/bin/one.py" />
+        <option value="$PROJECT_DIR$/examples/Convergent-divergent nozzle.ipynb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+    <option name="x" value="145" />
+    <option name="y" value="49" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
   </component>
@@ -256,6 +239,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -282,7 +266,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,7 +294,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jupyter Notebook.artemis-nozel">
+    <configuration name="artemis-nozel" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="artemis-nozel" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="artemis-nozel" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,6 +333,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Jupyter Notebook.artemis-nozel" />
+      <item itemvalue="Python.run" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.run" />
@@ -370,21 +374,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
+    <frame x="145" y="49" width="1280" height="777" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977029" visible="true" weight="0.20840065" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977029" visible="true" weight="0.21486267" />
       <window_info id="Structure" order="1" sideWeight="0.5022971" side_tool="true" weight="0.25755286" />
       <window_info id="Favorites" order="2" sideWeight="0.5007657" side_tool="true" weight="0.25755286" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924962" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3288889" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32846716" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4983845" visible="true" weight="0.17664233" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4983845" weight="0.17518248" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016155" side_tool="true" weight="0.45547447" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.34890512" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -515,10 +518,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bin/one-v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="69" column="42" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+          <folding>
+            <element signature="e#24#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -532,8 +552,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/skaero/gasdynamics/nozzles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
+          <folding>
+            <element signature="e#95#143#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/Oblique shocks chart.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/oblique_shock_graph.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skaero/gasdynamics/isentropic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="33" />
+          <folding>
+            <element signature="e#382#430#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build/lib/skaero/gasdynamics/isentropic.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -549,53 +596,6 @@
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
           <selected id="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/examples/Oblique shocks chart.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skaero/gasdynamics/nozzles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="34" column="61" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
-          <folding>
-            <element signature="e#95#143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/skaero/gasdynamics/isentropic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="53" column="12" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="33" />
-          <folding>
-            <element signature="e#382#430#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/one-v1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-          <folding>
-            <element signature="e#28#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/one.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="75" column="39" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
-          <folding>
-            <element signature="e#24#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

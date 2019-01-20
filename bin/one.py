@@ -42,7 +42,8 @@ isp = Ve / 9.80665 #specific impulse - assume gravity 9.8 m/s
 Tsum = Tt + Tc #sum of temp to find average
 Tavg = Tsum / 2 # avg temp
 mu = np.arcsin(1 / Me) #mach angle
-Lcone = (Dt / 2) * ( math.sqrt(Ae / At) - 1 ) * (np.arctan(mu))
+mu_c = (mu * 180) / np.pi #in degrees
+
 
 #write it out
 f = open("./reports/report.html", 'w')
@@ -67,13 +68,13 @@ At_c = At / 10
 f.write ("Area Throat (cm^2): %s" % f'{At_c:.6f}' + '<br>')
 Ae_c = Ae / 10
 f.write ("Area Exit (cm^2): %s" % f'{Ae_c:.6f}' + '<br>')
-Dt = 2 * np.sqrt(At_c / 3.14159265359)
+Dt = 2 * np.sqrt(At_c / np.pi)
 f.write ("Diameter Throat (cm): %s" % f'{Dt:.6f}' + '<br>')
-De = 2 * np.sqrt(Ae_c / 3.14159265359)
+De = 2 * np.sqrt(Ae_c / np.pi)
 f.write ("Diameter Exit (cm): %s" % f'{De:.6f}' + '<br>')
-Lcone_c = Lcone / 10
+Lcone = np.sin(mu_c) * ( (Dt / 2) - (De / 2) )
 f.write ("Cone Length (cm): %s" % f'{Lcone:.6f}' + '<br>')
-f.write ("Mach Angle: %s" % mu + '<br>')
+f.write ("Mach Angle (rad): %s" % mu + '<br>')
 f.close()
 
 """
